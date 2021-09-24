@@ -42,14 +42,31 @@ body{
 .infor-container .infor-item{
     padding: 0.5rem;
     margin-left: 3rem;
+    display: flex;
 }
-.infor-container .infor-item a{
+.infor-container a{
+    pointer-events: all;
     color: rgb(31, 40, 61);
     text-decoration: none;
 }
-.infor-container .infor-item a:visited{
-    color: rgb(31, 40, 61);
+.infor-container a:hover{
+    color: rgb(0, 2, 90);
+}
+.infor-container a:visited label{
+    color: rgb(44, 15, 77);
 }
 .infor-container .infor-item label{
     font-weight: bold;  
+}
+.infor-container .infor-item .pre-view {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.infor-container .infor-item:hover .pre-view{
+    display: flex;
+}
+.infor-container .infor-item .pre-view img {
+    width: 30px;
+    height: 30px;
 }
